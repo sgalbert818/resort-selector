@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', 'Serif';
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.25em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+h4 {
+    font-size: 0.9em;
+}
+
+h5 {
+    font-size: 0.8em;
+}
+
+h6 {
+    font-size: 0.7em;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+/* resort blocks formatting */
+
+.home-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/images/background.jpg) no-repeat;
+    background-position-y: 13%;
+    background-size: cover;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.298);
+}
+
+.input-buttons {
+    width: 50%;
+    min-width: 280px;
+    max-width: 400px;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 100px; /**/
+    text-align: center;
+}
+
+.title {
+    margin: 0 auto 20px auto;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.557);
+    letter-spacing: 6px;
+}
+
+#autocomplete {
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 3px;
+    font-family: 'Roboto Mono', 'Serif';
+}
+
+.filter-buttons {
+    width: 100%;
+    display: none;
+    justify-content: center;
+}
+
+#epic-button, #ikon-button, #all-button {
+    margin: 20px 5% 0 5%;
+    min-width: 60px;
+    max-width: 60px;
+    height: 30px;
+    border: none;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    color: #001148;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.6em;
+    line-height: 10px;
+    letter-spacing: 0.5px;
+    text-wrap: wrap;
+}
+
+#epic-button img, #ikon-button img {
+    height: 18px;
+    width: auto;
+}
+
+.resorts-container {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.resort {
+    width: 325px;
+    min-width: 325px;
+    height: 400px;
+    position: relative;
+    margin: 20px 10px 0 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.298);
+}
+
+.resort-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    position: relative;
+    border-radius: 3px;
+}
+
+.resort-content {
+    height: 400px;
+    width: 325px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    opacity: 0.9;
+}
+
+.resort-name {
+    background-color: white;
+    margin: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.244);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.resort-weather {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.high, .low, .icon {
+    height: 45px;
+    width: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.244);
+}
+
+.weather-icon {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    object-fit: contain;
+}
+
+.resort-report {
+    background-color: white;
+    margin: 15px;
+    padding: 8px 10px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.244);
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.resort-traffic {
+    background-color: white;
+    margin: 0 15px 15px 15px;
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.244);
+}
+
+.resort-traffic iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    display: none;
+}

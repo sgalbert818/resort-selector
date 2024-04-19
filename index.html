@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resort Selector</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="home-page">
+        <div class="input-buttons">
+            <div class="title">
+                <h1>Resort Selector</h1>
+            </div>
+            <form>
+                <div class="address-input">
+                    <!--<label for="autocomplete">Enter address for traffic information: </label>-->
+                    <input type="text" id="autocomplete" name="address" autocomplete="off"
+                        placeholder="Enter Address or Starting Location" required />
+                </div>
+            </form>
+            <div class="filter-buttons">
+                <button id="epic-button" type="button">
+                    <img src="/images/epic.jpg">
+                </button>
+                <button id="ikon-button" type="button">
+                    <img src="/images/ikon.png">
+                </button>
+                <button id="all-button" type="button">Display All</button>
+            </div>
+        </div>
+    </div>
+    <div class="resorts-container">
+        <!--
+        <div class="resort">
+            <img src="images/copper.jpg" class="resort-img">
+            <div class="resort-content">
+                <div class="resort-name">
+                    <h3>Keystone</h3>
+                    <h5>Dillon, Colorado</h5>
+                </div>
+                <div class="resort-weather">
+                    <div class="high">
+                        <h6>High</h6>
+                        <h2>47°</h2>
+                    </div>
+                    <div class="low">
+                        <h6>Low</h6>
+                        <h2>16°</h2>
+                    </div>
+                    <div class="icon">
+                        <img src="images/partly-cloudy-day.png" class="weather-icon">
+                    </div>
+                </div>
+                <div class="resort-report">
+                    <p>Partly sunny skies in the morning give way to snow showers throughout the afternoon and evening.</p>
+                </div>
+                <div class="resort-traffic">
+                    <iframe loading="lazy" zoom='7' allowfullscreen src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJzxcfI6qAa4cR1jaKJ_j0jhE&destination=place_id:ChIJg2V85yRXaocRYfovfYgMZ0M&key=AIzaSyDKXvBmIXu6Rx45ioDEyZDPJ6FS6ghFu9k"></iframe>
+                </div>
+            </div> 
+        </div>
+    -->
+
+
+    </div>
+    <footer class="footer"></footer>
+    <script src="app.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKXvBmIXu6Rx45ioDEyZDPJ6FS6ghFu9k&loading=async&libraries=places&callback=initAutocomplete"> </script>
+</body>
+
+</html>
