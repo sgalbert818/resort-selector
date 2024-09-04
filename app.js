@@ -1,3 +1,6 @@
+require('dotenv').config();
+const key = process.env.API_KEY;
+
 // setup
 
 const resorts = [
@@ -107,7 +110,7 @@ let marker = 0;
 const resortsContainer = document.querySelector('.resorts-container');
 let urls = []
 resorts.forEach((resort) => {
-    urls.push(fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${resort.city}%2C%20${resort.state}?unitGroup=metric&include=days&key=VGSVU45QFY7FQ3T557YS85XR6&contentType=json`))
+    urls.push(fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${resort.city}%2C%20${resort.state}?unitGroup=metric&include=days&key=${key}&contentType=json`))
 })
 
 // set up maps
